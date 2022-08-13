@@ -1,0 +1,474 @@
+/*
+ *   Copyright (c) 2022 
+ *   All rights reserved.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&family=Bebas+Neue&family=Changa:wght@200&family=Cinzel:wght@600&family=Concert+One&family=Fredoka+One&family=Handlee&family=Ibarra+Real+Nova&family=Josefin+Sans&family=Lato:wght@300&family=Lobster&family=Mingzat&family=Oleo+Script+Swash+Caps&family=Open+Sans:wght@300;400&family=Pacifico&family=Patrick+Hand&family=Permanent+Marker&family=Playfair+Display+SC:wght@700&family=Playfair+Display:wght@400;800&family=Raleway:wght@400;500&family=Roboto+Condensed&family=Roboto+Mono&family=Roboto:wght@300;400;700&family=Secular+One&family=Shadows+Into+Light&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "hey";
+    src: url("HeyHeyRegular.ttf");
+}
+
+img {
+    max-width: 100%;
+}
+
+.top-section {
+    background-color: rgb(34, 34, 34);
+}
+
+.top-section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* color:white; */
+    padding: 5px 10px;
+}
+
+.content-1 {
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+
+.address {
+    display: flex;
+    color: white;
+}
+
+.phone {
+    margin-left: 20px;
+    display: flex;
+    color: white;
+}
+
+.phone i {
+    margin-right: 10px;
+}
+
+.address i {
+    margin-right: 10px;
+}
+
+.address p {
+    color: white;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.phone p {
+    color: white;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.content-2 ul {
+    display: flex;
+    cursor: pointer;
+}
+
+.content-2 ul li {
+    list-style: none;
+    color: white;
+    margin-right: 20px;
+    transition: 0.4s;
+}
+
+.content-2 ul li:hover {
+    color: #f9004d;
+    transform: translateY(-5%);
+}
+
+.container {
+    background-image: linear-gradient(#3333, #333), url("back.jpg");
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    font-family: "hey";
+}
+
+.logo {
+    color: white;
+    font-size: 44px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.logo span.active {
+    color: #f9004d;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.links ul {
+    display: flex;
+}
+
+.links ul li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.links ul li a {
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: 0.4s;
+}
+
+.links ul li a:hover {
+    color: #f9004d;
+    transform: translateY(-5%);
+}
+
+.toggle-button {
+    display: none;
+    width: 30px;
+    height: 21px;
+    position: absolute;
+    top: 5rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0px 0 20px;
+}
+
+.heading h1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container h1.primary {
+    color: #f9004d;
+    font-family: "hey";
+    letter-spacing: 4px;
+    font-size: 72px;
+}
+
+.container h1.secondary {
+    color: white;
+    font-family: "hey";
+    font-weight: 600;
+    letter-spacing: 5px;
+    font-size: 86px;
+}
+
+.button-top {
+    width: 10%;
+    padding: 7px 10px;
+    background-color: #f9004d;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 2px;
+    transition: 1s;
+}
+
+.button-top:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    outline: none;
+    transform: rotate(360deg);
+}
+
+.button-top a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "hey", sans-serif;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.features h1 {
+    font-size: 48px;
+    text-align: left;
+    padding: 0 20px;
+    font-family: "Montserrat", sans-serif;
+    margin: 30px 0;
+    letter-spacing: 2px;
+    color: #f9004d;
+    font-weight: 200;
+    text-shadow: 0 2px 2px black;
+}
+
+.shopping-list {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.lines {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+.card {
+    background-color: #3333;
+    box-shadow: 0 0 5px 5px #00000015;
+    width: 40%;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-10%);
+}
+
+.tags {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 7px;
+    align-items: center;
+}
+
+.tags-content {
+    font-family: "hey";
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.big-box {
+    background-color: #3333;
+    box-shadow: -2px -7px 20px -5px rgba(0, 0, 0, 0.81),
+        25px 0px 20px -20px rgba(0, 0, 0, 0.45),
+        0px 25px 20px -20px rgba(0, 0, 0, 0.45),
+        -25px 0px 20px -20px rgba(0, 0, 0, 0.45),
+        0px 15px 12px 0px rgba(0, 0, 0, 0.22);
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+    margin: 40px auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.text h1.first {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+}
+
+.text h1.second {
+    font-size: 54px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+.image img {
+    width: 80%;
+}
+
+.button {
+    width: 60%;
+    padding: 7px 10px;
+    background-color: #3e89b7;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.button:last-child {
+    width: 80%;
+    padding: 7px 10px;
+    background-color: #d12a32;
+    text-align: center;
+    border-radius: 2px;
+}
+.button:hover{
+    background-color: transparent;
+    transform: scale(1.1);
+    border:1px solid #FF0000;
+    color:black;
+}
+
+.button a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "hey", sans-serif;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.text a:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    outline: none;
+}
+
+.row-1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.last-second {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sections {
+    display: flex;
+    padding: 30px;
+    border: 2px solid #333;
+}
+
+.social-tags {
+    color: #333;
+    font-size: 20px;
+}
+
+.para h4 {
+    font-family: "Montserrat", sans-serif;
+    margin-left: 20px;
+}
+
+.para p {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 24px;
+    font-family: "hey";
+    width: 50%;
+}
+
+.last-one {
+    background-color: #333;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.last-section-1 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+}
+
+.last-section-1 span.active {
+    color: #f9004d;
+}
+
+.last-section-2 {
+    display: flex;
+
+}
+
+.last-section-2 .token {
+    font-size: 26px;
+    color: white;
+    margin: 0 20px 0 0;
+    transition: .3s;
+}
+
+.token:hover:nth-child(1) {
+    transform: translateY(-10%);
+    color: #1DA1F2;
+}
+
+.token:hover:nth-child(2) {
+    transform: translateY(-10%);
+    color: #FF0000;
+
+}
+
+.token:hover:nth-child(3) {
+    transform: translateY(-10%);
+    color: #E1306C;
+}
+
+.token:hover:nth-child(4) {
+    transform: translateY(-10%);
+    color: #4267B2;
+}
+
+.last-section-3 h4 {
+    color: white;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.form-group form {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+input[type="text"] {
+    padding: 2px 5px;
+    font-family: "Montserrat", sans-serif;
+    outline: none;
+}
+
+input[type="text"]:hover {
+    border: 2px solid #f9004d;
+}
+
+.last-section-3 p {
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    font-weight: 200;
+}
+
+.btn {
+    background-color: #f9004d;
+    width: 50%;
+    text-align: center;
+    padding: 2px 5px;
+}
+
+.btn a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-family: "hey", sans-serif;
+}
+
+.btn:hover {
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #f9004d;
+}
